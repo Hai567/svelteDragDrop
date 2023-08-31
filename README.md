@@ -1,10 +1,6 @@
-
 # Svelte Drag Drop
 
 An easy-to-use drag and drop Svelte component
-
-
-
 
 ## Installation
 
@@ -13,19 +9,23 @@ Install sveltedragdrop with npm
 ```bash
   npm i sveltedragdrop
 ```
-    
+
 ### Required attributes
+
 - list
-(List of things)
+  (List of things)
 - on:reSort
-(Resort logic)
+  (Resort logic)
 - let:item
 
 ### Styling attributes (optional)
+
 You can easily style the component as you want by passing styling classes as string into attributes below.
 ( The classes can be from any framework or library or even your own global styles as long as the component can access them. )
+
 - ulStyle
 - liStyle
+
 ## Usage/Examples
 
 ```HTML
@@ -57,7 +57,7 @@ You can easily style the component as you want by passing styling classes as str
 </script>
 
 <div>
-    <DragDrop 
+    <DragDrop
     let:item
     list={people}
     on:reSort={reSortHandler}
@@ -69,9 +69,7 @@ You can easily style the component as you want by passing styling classes as str
 </div>
 ```
 
-
 ## Authors
 
 - [@DanielHo/Canadies](https://github.com/Hai567)
 - An other sources on the Internet (of course :D)
-

@@ -1,0 +1,29 @@
+{
+  "name": "sveltedragdrop",
+  "version": "1.0.0",
+  "description": "An easy-to-use draggin-dropping component for Svelte",
+  "main": "dragDrop.svelte",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hai567/svelteDragDrop.git"
+  },
+  "keywords": [
+    "components",
+    "documentation",
+    "Svelte",
+    "SvelteKit",
+    "drag",
+    "drop",
+    "drag-drop",
+    "dragDrop"
+  ],
+  "author": "Daniel Ho (Canadies)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Hai567/svelteDragDrop/issues"
+  },
+  "homepage": "https://github.com/Hai567/svelteDragDrop#readme"
+}

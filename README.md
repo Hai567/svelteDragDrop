@@ -1,38 +1,71 @@
-# create-svelte
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+# Svelte Drag Drop
 
-## Creating a project
+An easy-to-use drag and drop Svelte component
 
-If you're seeing this, you've probably already done this step. Congrats!
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
 
-## Developing
+## Installation
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Install sveltedragdrop with npm
 
 ```bash
-npm run dev
+  npm i sveltedragdrop
+```
+    
+### Required attributes
+- list
+(List of things)
+- on:reSort
+(Resort logic)
+- let:item
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+### Styling attributes (optional)
+You can easily style the component as you want by passing styling classes as string into attributes below.
+( The classes can be from any framework or library or even your own global styles as long as the component can access them. )
+- ulStyle
+- liStyle
+## Usage/Examples
+
+```HTML
+<!--app.html-->
+...
+<style>
+    .big-black-text{
+        font-weight: 900;
+		color: red;
+		font-size: 10em;
+    }
+</style>
 ```
 
-## Building
+```javascript
+<script>
+    import DragDrop from "sveltedragdrop"
+    let people = [
+        { name: "Robert Downey" },
+        { name: "Chris Evans" },
+        { name: "Chris Hemsworth" },
+        { name: "Chadwick Boseman" },
+        { name: "Chris Pratt" }
+    ]
+    function reSortHandler(e) {
+        let newList = e.detail
+        people = newList
+    }
+</script>
 
-To create a production version of your app:
-
-```bash
-npm run build
+<div>
+    <DragDrop 
+    let:item
+    list={people}
+    on:reSort={reSortHandler}
+    ulStyle="flex"
+    liStyle="big-black-text"
+    >
+    <h2>{item.name}</h2>
+    <DragDrop>
+</div>
 ```
 
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.

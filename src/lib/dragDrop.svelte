@@ -50,7 +50,7 @@
       const newList = [...list];
       newList[from] = [newList[to], (newList[to] = newList[from])][0];
   
-      dispatch("sort", newList);
+      dispatch("reSort", newList);
     };
   </script>
   

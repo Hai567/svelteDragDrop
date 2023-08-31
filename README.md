@@ -65,7 +65,7 @@ You can easily style the component as you want by passing styling classes as str
     liStyle="big-black-text"
     >
     <h2>{item.name}</h2>
-    <DragDrop>
+    </DragDrop>
 </div>
 ```
 

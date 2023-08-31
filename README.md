@@ -34,8 +34,8 @@ You can easily style the component as you want by passing styling classes as str
 <style>
     .big-black-text{
         font-weight: 900;
-	color: red;
-	font-size: 10em;
+		color: red;
+		font-size: 10em;
     }
 </style>
 ```
@@ -68,4 +68,10 @@ You can easily style the component as you want by passing styling classes as str
     <DragDrop>
 </div>
 ```
+
+
+## Authors
+
+- [@DanielHo/Canadies](https://github.com/Hai567)
+- An other sources on the Internet (of course :D)
 

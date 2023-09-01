@@ -38,7 +38,7 @@ You can easily style the component as you want by passing styling classes as str
     .big-black-text{
         font-weight: 900;
 	color: red;
-	font-size: 10em;
+	font-size: 3em;
     }
 </style>
 ```

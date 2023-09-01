@@ -2,6 +2,9 @@
 
 An easy-to-use drag and drop Svelte component
 
+## Demo
+A demo of this component can be seen [here](https://svelte.dev/repl/b1154f804b1f4794947da7795add613c?version=4.2.0)
+
 ## Installation
 
 Install sveltedragdrop with npm
@@ -34,8 +37,8 @@ You can easily style the component as you want by passing styling classes as str
 <style>
     .big-black-text{
         font-weight: 900;
-		color: red;
-		font-size: 10em;
+	color: red;
+	font-size: 10em;
     }
 </style>
 ```
@@ -68,6 +71,7 @@ You can easily style the component as you want by passing styling classes as str
     </DragDrop>
 </div>
 ```
+
 
 ## Authors
 
